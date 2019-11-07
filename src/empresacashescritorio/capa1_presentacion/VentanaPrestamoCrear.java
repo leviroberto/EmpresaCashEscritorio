@@ -810,8 +810,7 @@ public class VentanaPrestamoCrear extends javax.swing.JDialog {
     private void inabilitarPaso3(boolean estado) {
         txt_de.setEnabled(false);
         txt_hasta.setEnabled(false);
-        date_fin.setEnabled(false);
-        date_inicio.setEnabled(false);
+      
         btn_calcularResumen.setEnabled(estado);
         txt_totalDiasPagar.setEnabled(estado);
         txt_puntosAcumulados.setEnabled(false);
