@@ -389,6 +389,7 @@ public class Verificador {
             evt.consume();
         }
     }
+
     public static void verificarNumeros(KeyEvent evt, JTextField txt_dni, int numero) {
         String patron_de_entrada = "0123456789";
         if (txt_dni.getText().length() == numero
@@ -421,8 +422,8 @@ public class Verificador {
             txt_dni.setAccent(Color.GREEN);
         }
     }
-    
-     public static void verificarNumerosEntreRango(KeyEvent evt, FiveCodMaterialTextField txt_dni, double numeroInicio, double numeroFin,String entrada) {
+
+    public static void verificarNumerosEntreRango(KeyEvent evt, FiveCodMaterialTextField txt_dni, double numeroInicio, double numeroFin, String entrada) {
         String patron_de_entrada = entrada;
         String numeroAux = txt_dni.getText();
         double numero = 0;
@@ -466,6 +467,19 @@ public class Verificador {
         calendar.setTime(fecha);
         calendar.add(Calendar.DAY_OF_YEAR, dias);
         return calendar.getTime();
+    }
+
+    public static void ponerEnMayuscula(FiveCodMaterialTextField txt_nombre) {
+        txt_nombre.setText(txt_nombre.getText().toUpperCase());
+    }
+
+    public static void seleccionarFocus(FiveCodMaterialTextField texto) {
+        texto.requestFocus();
+        texto.selectAll();
+    }
+
+    public static void limpiarTexto(JTextField texto) {
+        texto.setText("");
     }
 
 }

@@ -75,49 +75,41 @@ public class VentanaPrestamoCrear extends javax.swing.JDialog {
         fiveCodButton1 = new fivecodbutton.FiveCodButton();
         jPanel1 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
-        fiveCodLabelImage1 = new fivecodlabelimage.FiveCodLabelImage();
         txt_celular = new FiveCodMaterialDesignTextField.FiveCodMaterialTextField();
         txt_email = new FiveCodMaterialDesignTextField.FiveCodMaterialTextField();
-        fiveCodLabelImage6 = new fivecodlabelimage.FiveCodLabelImage();
         txt_estado = new FiveCodMaterialDesignTextField.FiveCodMaterialTextField();
-        fiveCodLabelImage2 = new fivecodlabelimage.FiveCodLabelImage();
         txt_cliente = new FiveCodMaterialDesignTextField.FiveCodMaterialTextField();
-        fiveCodLabelImage7 = new fivecodlabelimage.FiveCodLabelImage();
         txt_dni = new FiveCodMaterialDesignTextField.FiveCodMaterialTextField();
-        fiveCodLabelImage8 = new fivecodlabelimage.FiveCodLabelImage();
         btn_buscar = new javax.swing.JButton();
-        btn_cancelar = new FiveCodMaterialDesignButton.FiveCodMaterialButton();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        fiveCodLabelImage10 = new fivecodlabelimage.FiveCodLabelImage();
         txt_monto = new FiveCodMaterialDesignTextField.FiveCodMaterialTextField();
         txt_de = new FiveCodMaterialDesignTextField.FiveCodMaterialTextField();
         txt_hasta = new FiveCodMaterialDesignTextField.FiveCodMaterialTextField();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        fiveCodLabelImage5 = new fivecodlabelimage.FiveCodLabelImage();
-        fiveCodLabelImage11 = new fivecodlabelimage.FiveCodLabelImage();
         btn_verificarSiTienPrestamoActivo = new FiveCodMaterialDesignButton.FiveCodMaterialButton();
         jLabel8 = new javax.swing.JLabel();
-        fiveCodLabelImage12 = new fivecodlabelimage.FiveCodLabelImage();
         txt_subTotal = new FiveCodMaterialDesignTextField.FiveCodMaterialTextField();
-        fiveCodLabelImage13 = new fivecodlabelimage.FiveCodLabelImage();
         txt_comision = new FiveCodMaterialDesignTextField.FiveCodMaterialTextField();
-        fiveCodLabelImage14 = new fivecodlabelimage.FiveCodLabelImage();
         txt_total = new FiveCodMaterialDesignTextField.FiveCodMaterialTextField();
         jLabel9 = new javax.swing.JLabel();
-        fiveCodLabelImage15 = new fivecodlabelimage.FiveCodLabelImage();
         txt_mora = new FiveCodMaterialDesignTextField.FiveCodMaterialTextField();
-        btn_guardar = new FiveCodMaterialDesignButton.FiveCodMaterialButton();
         btn_calcularResumen = new FiveCodMaterialDesignButton.FiveCodMaterialButton();
         txt_puntosAcumulados = new FiveCodMaterialDesignTextField.FiveCodMaterialTextField();
-        fiveCodLabelImage16 = new fivecodlabelimage.FiveCodLabelImage();
         date_fin = new com.toedter.calendar.JDateChooser();
         txt_totalDiasPagar = new FiveCodMaterialDesignTextField.FiveCodMaterialTextField();
-        fiveCodLabelImage17 = new fivecodlabelimage.FiveCodLabelImage();
         date_inicio = new com.toedter.calendar.JDateChooser();
-        fiveCodButton2 = new fivecodbutton.FiveCodButton();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        titulo = new javax.swing.JPanel();
+        fiveCodButton4 = new fivecodbutton.FiveCodButton();
+        jLabel12 = new javax.swing.JLabel();
+        jPanel4 = new javax.swing.JPanel();
+        btn_guardar = new FiveCodMaterialDesignButton.FiveCodMaterialButton();
+        btn_cancelar = new FiveCodMaterialDesignButton.FiveCodMaterialButton();
 
         jPanel2.setBackground(new java.awt.Color(65, 94, 255));
 
@@ -180,7 +172,6 @@ public class VentanaPrestamoCrear extends javax.swing.JDialog {
         dropShadowBorder1.setShowTopShadow(true);
         jPanel3.setBorder(dropShadowBorder1);
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        jPanel3.add(fiveCodLabelImage1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 230, 50, 50));
 
         txt_celular.setForeground(new java.awt.Color(65, 94, 255));
         txt_celular.setAccent(new java.awt.Color(0, 132, 235));
@@ -188,7 +179,7 @@ public class VentanaPrestamoCrear extends javax.swing.JDialog {
         txt_celular.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         txt_celular.setLabel("CELULAR");
         txt_celular.setMargin(new java.awt.Insets(0, 0, 0, 0));
-        jPanel3.add(txt_celular, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 220, 200, 60));
+        jPanel3.add(txt_celular, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 70, 160, 60));
 
         txt_email.setForeground(new java.awt.Color(65, 94, 255));
         txt_email.setAccent(new java.awt.Color(0, 132, 235));
@@ -201,8 +192,7 @@ public class VentanaPrestamoCrear extends javax.swing.JDialog {
                 txt_emailKeyTyped(evt);
             }
         });
-        jPanel3.add(txt_email, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 160, 200, 60));
-        jPanel3.add(fiveCodLabelImage6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 170, 50, 50));
+        jPanel3.add(txt_email, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 70, 200, 60));
 
         txt_estado.setForeground(new java.awt.Color(65, 94, 255));
         txt_estado.setAccent(new java.awt.Color(0, 132, 235));
@@ -210,8 +200,7 @@ public class VentanaPrestamoCrear extends javax.swing.JDialog {
         txt_estado.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         txt_estado.setLabel("ESTADO");
         txt_estado.setMargin(new java.awt.Insets(0, 0, 0, 0));
-        jPanel3.add(txt_estado, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 290, 200, 60));
-        jPanel3.add(fiveCodLabelImage2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 300, 50, 50));
+        jPanel3.add(txt_estado, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 70, 150, 60));
 
         txt_cliente.setForeground(new java.awt.Color(65, 94, 255));
         txt_cliente.setAccent(new java.awt.Color(0, 132, 235));
@@ -224,8 +213,7 @@ public class VentanaPrestamoCrear extends javax.swing.JDialog {
                 txt_clienteKeyTyped(evt);
             }
         });
-        jPanel3.add(txt_cliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 90, 200, 60));
-        jPanel3.add(fiveCodLabelImage7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 100, 50, 50));
+        jPanel3.add(txt_cliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, 200, 60));
 
         txt_dni.setForeground(new java.awt.Color(65, 94, 255));
         txt_dni.setAccent(new java.awt.Color(0, 132, 235));
@@ -238,8 +226,7 @@ public class VentanaPrestamoCrear extends javax.swing.JDialog {
                 txt_dniKeyTyped(evt);
             }
         });
-        jPanel3.add(txt_dni, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 20, 120, 60));
-        jPanel3.add(fiveCodLabelImage8, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 30, 50, 50));
+        jPanel3.add(txt_dni, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 140, 60));
 
         btn_buscar.setText("Buscar");
         btn_buscar.addActionListener(new java.awt.event.ActionListener() {
@@ -247,25 +234,13 @@ public class VentanaPrestamoCrear extends javax.swing.JDialog {
                 btn_buscarActionPerformed(evt);
             }
         });
-        jPanel3.add(btn_buscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 33, -1, 40));
-
-        btn_cancelar.setBackground(new java.awt.Color(65, 94, 255));
-        btn_cancelar.setBorder(null);
-        btn_cancelar.setText("cancelar");
-        btn_cancelar.setType(FiveCodMaterialDesignButton.FiveCodMaterialButton.Type.RAISED);
-        btn_cancelar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_cancelarActionPerformed(evt);
-            }
-        });
-        jPanel3.add(btn_cancelar, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 350, 130, 60));
+        jPanel3.add(btn_buscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 30, -1, 40));
 
         jLabel2.setText("Datos Personales");
         jPanel3.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, -1));
 
-        jLabel3.setText("Verificar si tiene prestamo");
-        jPanel3.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 410, -1, -1));
-        jPanel3.add(fiveCodLabelImage10, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 180, 50, 50));
+        jLabel3.setText("Calcular costo");
+        jPanel3.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 210, -1, -1));
 
         txt_monto.setForeground(new java.awt.Color(65, 94, 255));
         txt_monto.setAccent(new java.awt.Color(0, 132, 235));
@@ -281,7 +256,7 @@ public class VentanaPrestamoCrear extends javax.swing.JDialog {
                 txt_montoKeyTyped(evt);
             }
         });
-        jPanel3.add(txt_monto, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 170, 200, 60));
+        jPanel3.add(txt_monto, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 220, 200, 60));
 
         txt_de.setForeground(new java.awt.Color(65, 94, 255));
         txt_de.setAccent(new java.awt.Color(0, 132, 235));
@@ -294,7 +269,7 @@ public class VentanaPrestamoCrear extends javax.swing.JDialog {
                 txt_deKeyTyped(evt);
             }
         });
-        jPanel3.add(txt_de, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 40, 80, 60));
+        jPanel3.add(txt_de, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 140, 70, 60));
 
         txt_hasta.setForeground(new java.awt.Color(65, 94, 255));
         txt_hasta.setAccent(new java.awt.Color(0, 132, 235));
@@ -307,18 +282,16 @@ public class VentanaPrestamoCrear extends javax.swing.JDialog {
                 txt_hastaKeyTyped(evt);
             }
         });
-        jPanel3.add(txt_hasta, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 40, 80, 60));
+        jPanel3.add(txt_hasta, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 140, 90, 60));
 
         jLabel6.setText("A");
-        jPanel3.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 70, 20, -1));
+        jPanel3.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 170, 20, -1));
 
         jLabel7.setText("Montos disponibles");
-        jPanel3.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 20, -1, 20));
+        jPanel3.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 130, -1, 20));
 
         jLabel5.setText("Mora");
-        jPanel3.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 240, -1, 20));
-        jPanel3.add(fiveCodLabelImage5, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 300, 50, 50));
-        jPanel3.add(fiveCodLabelImage11, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 360, 50, 50));
+        jPanel3.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 290, -1, 20));
 
         btn_verificarSiTienPrestamoActivo.setBackground(new java.awt.Color(65, 94, 255));
         btn_verificarSiTienPrestamoActivo.setBorder(null);
@@ -329,11 +302,10 @@ public class VentanaPrestamoCrear extends javax.swing.JDialog {
                 btn_verificarSiTienPrestamoActivoActionPerformed(evt);
             }
         });
-        jPanel3.add(btn_verificarSiTienPrestamoActivo, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 450, 130, 60));
+        jPanel3.add(btn_verificarSiTienPrestamoActivo, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 90, 130, 60));
 
-        jLabel8.setText("Solicitud");
-        jPanel3.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 160, -1, 20));
-        jPanel3.add(fiveCodLabelImage12, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 50, 50, 50));
+        jLabel8.setText("Fecha Fin");
+        jPanel3.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 210, -1, 20));
 
         txt_subTotal.setForeground(new java.awt.Color(65, 94, 255));
         txt_subTotal.setAccent(new java.awt.Color(0, 132, 235));
@@ -346,8 +318,7 @@ public class VentanaPrestamoCrear extends javax.swing.JDialog {
                 txt_subTotalKeyTyped(evt);
             }
         });
-        jPanel3.add(txt_subTotal, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 40, 200, 60));
-        jPanel3.add(fiveCodLabelImage13, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 120, 50, 50));
+        jPanel3.add(txt_subTotal, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 300, 200, 60));
 
         txt_comision.setForeground(new java.awt.Color(65, 94, 255));
         txt_comision.setAccent(new java.awt.Color(0, 132, 235));
@@ -360,8 +331,7 @@ public class VentanaPrestamoCrear extends javax.swing.JDialog {
                 txt_comisionKeyTyped(evt);
             }
         });
-        jPanel3.add(txt_comision, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 110, 200, 60));
-        jPanel3.add(fiveCodLabelImage14, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 180, 50, 50));
+        jPanel3.add(txt_comision, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 300, 210, 60));
 
         txt_total.setForeground(new java.awt.Color(65, 94, 255));
         txt_total.setAccent(new java.awt.Color(0, 132, 235));
@@ -374,11 +344,10 @@ public class VentanaPrestamoCrear extends javax.swing.JDialog {
                 txt_totalKeyTyped(evt);
             }
         });
-        jPanel3.add(txt_total, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 170, 200, 60));
+        jPanel3.add(txt_total, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 300, 170, 60));
 
         jLabel9.setText("Resumen del pedido");
-        jPanel3.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 20, -1, 20));
-        jPanel3.add(fiveCodLabelImage15, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 280, 50, 50));
+        jPanel3.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 290, -1, 20));
 
         txt_mora.setForeground(new java.awt.Color(65, 94, 255));
         txt_mora.setAccent(new java.awt.Color(0, 132, 235));
@@ -391,29 +360,18 @@ public class VentanaPrestamoCrear extends javax.swing.JDialog {
                 txt_moraKeyTyped(evt);
             }
         });
-        jPanel3.add(txt_mora, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 270, 200, 60));
-
-        btn_guardar.setBackground(new java.awt.Color(65, 94, 255));
-        btn_guardar.setBorder(null);
-        btn_guardar.setText("guardar");
-        btn_guardar.setType(FiveCodMaterialDesignButton.FiveCodMaterialButton.Type.RAISED);
-        btn_guardar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_guardarActionPerformed(evt);
-            }
-        });
-        jPanel3.add(btn_guardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 350, 130, 60));
+        jPanel3.add(txt_mora, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 310, 150, 60));
 
         btn_calcularResumen.setBackground(new java.awt.Color(65, 94, 255));
         btn_calcularResumen.setBorder(null);
-        btn_calcularResumen.setText("calcular");
+        btn_calcularResumen.setText("GENERAR");
         btn_calcularResumen.setType(FiveCodMaterialDesignButton.FiveCodMaterialButton.Type.RAISED);
         btn_calcularResumen.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_calcularResumenActionPerformed(evt);
             }
         });
-        jPanel3.add(btn_calcularResumen, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 450, 130, 60));
+        jPanel3.add(btn_calcularResumen, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 230, 130, 60));
 
         txt_puntosAcumulados.setForeground(new java.awt.Color(65, 94, 255));
         txt_puntosAcumulados.setAccent(new java.awt.Color(0, 132, 235));
@@ -426,15 +384,14 @@ public class VentanaPrestamoCrear extends javax.swing.JDialog {
                 txt_puntosAcumuladosKeyTyped(evt);
             }
         });
-        jPanel3.add(txt_puntosAcumulados, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 100, 200, 60));
-        jPanel3.add(fiveCodLabelImage16, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 110, 50, 50));
+        jPanel3.add(txt_puntosAcumulados, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 140, 200, 60));
 
         date_fin.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 date_finMouseClicked(evt);
             }
         });
-        jPanel3.add(date_fin, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 380, 200, 30));
+        jPanel3.add(date_fin, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 240, 150, 30));
 
         txt_totalDiasPagar.setForeground(new java.awt.Color(65, 94, 255));
         txt_totalDiasPagar.setAccent(new java.awt.Color(0, 132, 235));
@@ -453,42 +410,103 @@ public class VentanaPrestamoCrear extends javax.swing.JDialog {
                 txt_totalDiasPagarKeyTyped(evt);
             }
         });
-        jPanel3.add(txt_totalDiasPagar, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 230, 200, 60));
-        jPanel3.add(fiveCodLabelImage17, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 240, 50, 50));
+        jPanel3.add(txt_totalDiasPagar, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 220, 200, 60));
 
         date_inicio.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 date_inicioMouseClicked(evt);
             }
         });
-        jPanel3.add(date_inicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 310, 200, 30));
+        jPanel3.add(date_inicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 240, 170, 30));
 
-        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 1, 950, 520));
+        jLabel10.setText("Solicitud");
+        jPanel3.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 200, -1, 20));
 
-        fiveCodButton2.setBackground(new java.awt.Color(65, 94, 255));
-        fiveCodButton2.setBorder(null);
-        fiveCodButton2.setColorHover(new java.awt.Color(255, 68, 68));
-        fiveCodButton2.setFont(new java.awt.Font("Roboto Bold", 1, 20)); // NOI18N
-        fiveCodButton2.setLabel("X");
-        fiveCodButton2.addActionListener(new java.awt.event.ActionListener() {
+        jLabel11.setText("Fecha Inicio");
+        jPanel3.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 210, -1, 20));
+
+        jLabel4.setText("Verificar si tiene prestamo");
+        jPanel3.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 70, -1, -1));
+
+        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(22, 41, 1030, 420));
+
+        titulo.setBackground(new java.awt.Color(65, 94, 255));
+
+        fiveCodButton4.setBackground(new java.awt.Color(65, 94, 255));
+        fiveCodButton4.setBorder(null);
+        fiveCodButton4.setColorHover(new java.awt.Color(255, 68, 68));
+        fiveCodButton4.setFont(new java.awt.Font("Roboto Bold", 1, 20)); // NOI18N
+        fiveCodButton4.setLabel("X");
+        fiveCodButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                fiveCodButton2ActionPerformed(evt);
+                fiveCodButton4ActionPerformed(evt);
             }
         });
-        jPanel1.add(fiveCodButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 0, 40, -1));
+
+        jLabel12.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
+        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel12.setText("PAGAR PRESTAMO");
+
+        javax.swing.GroupLayout tituloLayout = new javax.swing.GroupLayout(titulo);
+        titulo.setLayout(tituloLayout);
+        tituloLayout.setHorizontalGroup(
+            tituloLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(tituloLayout.createSequentialGroup()
+                .addGap(30, 30, 30)
+                .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 725, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 275, Short.MAX_VALUE)
+                .addComponent(fiveCodButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+        tituloLayout.setVerticalGroup(
+            tituloLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(tituloLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addComponent(jLabel12, javax.swing.GroupLayout.DEFAULT_SIZE, 41, Short.MAX_VALUE)
+                .addComponent(fiveCodButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
+        jPanel1.add(titulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1070, -1));
+
+        jPanel4.setBackground(new java.awt.Color(65, 94, 255));
+        jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        btn_guardar.setBackground(new java.awt.Color(255, 255, 255));
+        btn_guardar.setBorder(null);
+        btn_guardar.setText("guardar");
+        btn_guardar.setType(FiveCodMaterialDesignButton.FiveCodMaterialButton.Type.RAISED);
+        btn_guardar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_guardarActionPerformed(evt);
+            }
+        });
+        jPanel4.add(btn_guardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 60, 130, 60));
+
+        btn_cancelar.setBackground(new java.awt.Color(255, 255, 255));
+        btn_cancelar.setBorder(null);
+        btn_cancelar.setText("cancelar");
+        btn_cancelar.setType(FiveCodMaterialDesignButton.FiveCodMaterialButton.Type.RAISED);
+        btn_cancelar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_cancelarActionPerformed(evt);
+            }
+        });
+        jPanel4.add(btn_cancelar, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 60, 130, 60));
+
+        jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 410, 1060, 130));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        setSize(new java.awt.Dimension(973, 532));
+        setSize(new java.awt.Dimension(1070, 530));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -499,50 +517,6 @@ public class VentanaPrestamoCrear extends javax.swing.JDialog {
     private void formMouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_formMouseDragged
         FiveCodMover.FiveCodMoverJDialog.MouseDraggedJDialog(evt, this);      // TODO add your handling code here:
     }//GEN-LAST:event_formMouseDragged
-
-    private void btn_cancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_cancelarActionPerformed
-//        if (verificarCampos()) {
-//            prestamo = new Prestamo();
-//            prestamo.setDescripcion(txt_celular.getText().toString());
-//            prestamo.setEstado(txt_estado.getText().toString());
-//            prestamo.setNombre(txt_email.getText().toString());
-//            
-//            int registrosAfectados = 0;
-//            if (tipo_accion == ACCION_CREAR) {
-//                try {
-//                    registrosAfectados = registrarPrestamoServicio.guardar(prestamo);
-//                    if (registrosAfectados == 1) {
-//                        Mensaje.mostrarAfirmacionDeCreacion();
-//                        Prestamo prestamo = registrarPrestamoServicio.obtenerUltimoRegistro();
-//                        this.dispose();
-//                        VentanaPrestamoGeneral ventanaPrestamoGeneral = new VentanaPrestamoGeneral(null, true, prestamo);
-//                        ventanaPrestamoGeneral.setVisible(true);
-//                        
-//                    } else if (registrosAfectados == 0) {
-//                        Mensaje.mostrarErrorDeCreacion();
-//                    }
-//                } catch (Exception e) {
-//                    Mensaje.mostrarAdvertencia(e.getMessage());
-//                }
-//                
-//            } else if (tipo_accion == ACCION_MODIFICAR) {
-//                prestamo.setId(this.codigoPrestamo);
-//                try {
-//                    registrosAfectados = registrarPrestamoServicio.modificar(prestamo);
-//                    if (registrosAfectados == 1) {
-//                        Mensaje.mostrarAfirmacionDeActualizacion();
-//                        this.dispose();
-//                    } else if (registrosAfectados == 0) {
-//                        Mensaje.mostrarErrorDeActualizacion();
-//                    }
-//                } catch (Exception e) {
-//                    Mensaje.mostrarAdvertencia(e.getMessage());
-//                    
-//                }
-//            }
-//            
-//        }
-    }//GEN-LAST:event_btn_cancelarActionPerformed
 
     private void fiveCodButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fiveCodButton1ActionPerformed
         this.dispose();
@@ -627,7 +601,7 @@ public class VentanaPrestamoCrear extends javax.swing.JDialog {
         // TODO add your handling code here:
     }//GEN-LAST:event_txt_moraKeyTyped
 
-    private void btn_guardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_guardarActionPerformed
+    private void guardar() throws NumberFormatException {
         if (verificarCampos()) {
             prestamo.setCliente(clienteSeleccionado);
             prestamo.setEstado(Prestamo.ESTADO_ACTIVO);
@@ -661,7 +635,7 @@ public class VentanaPrestamoCrear extends javax.swing.JDialog {
             }
 
         }
-    }//GEN-LAST:event_btn_guardarActionPerformed
+    }
 
     private void btn_calcularResumenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_calcularResumenActionPerformed
         calcular2();
@@ -695,7 +669,7 @@ public class VentanaPrestamoCrear extends javax.swing.JDialog {
 
     private void txt_totalDiasPagarKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_totalDiasPagarKeyTyped
         Verificador.verificarNumerosEspecificarRango(evt, txt_totalDiasPagar, 1, "01234567");
-        
+
     }//GEN-LAST:event_txt_totalDiasPagarKeyTyped
 
     private void txt_totalDiasPagarKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_totalDiasPagarKeyPressed
@@ -727,13 +701,21 @@ public class VentanaPrestamoCrear extends javax.swing.JDialog {
         // TODO add your handling code here:
     }//GEN-LAST:event_date_inicioMouseClicked
 
-    private void fiveCodButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fiveCodButton2ActionPerformed
-        this.dispose();
-    }//GEN-LAST:event_fiveCodButton2ActionPerformed
-
     private void txt_montoKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_montoKeyReleased
-       Verificador.verificarNumerosEntreRango(evt, txt_monto , prestamo.obtenerMontoDe(),prestamo.obtenerMontoHasta());
+        Verificador.verificarNumerosEntreRango(evt, txt_monto, prestamo.obtenerMontoDe(), prestamo.obtenerMontoHasta());
     }//GEN-LAST:event_txt_montoKeyReleased
+
+    private void fiveCodButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fiveCodButton4ActionPerformed
+        this.dispose();
+    }//GEN-LAST:event_fiveCodButton4ActionPerformed
+
+    private void btn_cancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_cancelarActionPerformed
+        this.dispose();
+    }//GEN-LAST:event_btn_cancelarActionPerformed
+
+    private void btn_guardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_guardarActionPerformed
+        guardar();
+    }//GEN-LAST:event_btn_guardarActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -745,24 +727,14 @@ public class VentanaPrestamoCrear extends javax.swing.JDialog {
     private com.toedter.calendar.JDateChooser date_fin;
     private com.toedter.calendar.JDateChooser date_inicio;
     private fivecodbutton.FiveCodButton fiveCodButton1;
-    private fivecodbutton.FiveCodButton fiveCodButton2;
-    private fivecodlabelimage.FiveCodLabelImage fiveCodLabelImage1;
-    private fivecodlabelimage.FiveCodLabelImage fiveCodLabelImage10;
-    private fivecodlabelimage.FiveCodLabelImage fiveCodLabelImage11;
-    private fivecodlabelimage.FiveCodLabelImage fiveCodLabelImage12;
-    private fivecodlabelimage.FiveCodLabelImage fiveCodLabelImage13;
-    private fivecodlabelimage.FiveCodLabelImage fiveCodLabelImage14;
-    private fivecodlabelimage.FiveCodLabelImage fiveCodLabelImage15;
-    private fivecodlabelimage.FiveCodLabelImage fiveCodLabelImage16;
-    private fivecodlabelimage.FiveCodLabelImage fiveCodLabelImage17;
-    private fivecodlabelimage.FiveCodLabelImage fiveCodLabelImage2;
-    private fivecodlabelimage.FiveCodLabelImage fiveCodLabelImage5;
-    private fivecodlabelimage.FiveCodLabelImage fiveCodLabelImage6;
-    private fivecodlabelimage.FiveCodLabelImage fiveCodLabelImage7;
-    private fivecodlabelimage.FiveCodLabelImage fiveCodLabelImage8;
+    private fivecodbutton.FiveCodButton fiveCodButton4;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
@@ -771,6 +743,8 @@ public class VentanaPrestamoCrear extends javax.swing.JDialog {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel titulo;
     private FiveCodMaterialDesignTextField.FiveCodMaterialTextField txt_celular;
     private FiveCodMaterialDesignTextField.FiveCodMaterialTextField txt_cliente;
     private FiveCodMaterialDesignTextField.FiveCodMaterialTextField txt_comision;
@@ -793,7 +767,7 @@ public class VentanaPrestamoCrear extends javax.swing.JDialog {
 
         contador = Verificador.verificadorCampos(txt_monto);
         aux = contador + aux;
-        contador = Verificador.verificadorCamposFechas(date_fin);
+        contador = Verificador.verificadorCampos(txt_totalDiasPagar);
         aux = contador + aux;
         return aux == 2;
     }

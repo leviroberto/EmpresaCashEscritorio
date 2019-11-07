@@ -33,7 +33,7 @@ public class VentanaTipoClienteDatos extends javax.swing.JDialog {
         gestionarTipoClienteServicio = new GestionarTipoClienteServicio();
         tipo_accion = ACCION_CREAR;
         txt_estado.setText(TipoCliente.ESTADO_ACTIVO);
-        
+        Verificador.seleccionarFocus(txt_descripcion);
     }
     
     public VentanaTipoClienteDatos(java.awt.Frame parent, boolean modal, TipoCliente tipoCliente) {
@@ -41,7 +41,7 @@ public class VentanaTipoClienteDatos extends javax.swing.JDialog {
         initComponents();
         gestionarTipoClienteServicio = new GestionarTipoClienteServicio();
         tipo_accion = ACCION_MODIFICAR;
-        this.tipoCliente = tipoCliente;
+        this.tipoCliente = tipoCliente; 
         
         llenarCampos();
     }
@@ -159,6 +159,11 @@ public class VentanaTipoClienteDatos extends javax.swing.JDialog {
                 txt_descripcionActionPerformed(evt);
             }
         });
+        txt_descripcion.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                txt_descripcionKeyReleased(evt);
+            }
+        });
         jPanel3.add(txt_descripcion, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 0, 210, 60));
 
         jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 41, 302, 150));
@@ -260,6 +265,10 @@ public class VentanaTipoClienteDatos extends javax.swing.JDialog {
         // TODO add your handling code here:
     }//GEN-LAST:event_txt_descripcionActionPerformed
 
+    private void txt_descripcionKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_descripcionKeyReleased
+        txt_descripcion.setText(txt_descripcion.getText().toUpperCase());
+    }//GEN-LAST:event_txt_descripcionKeyReleased
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private FiveCodMaterialDesignButton.FiveCodMaterialButton btnCancelar;
@@ -279,8 +288,7 @@ public class VentanaTipoClienteDatos extends javax.swing.JDialog {
     private FiveCodMaterialDesignTextField.FiveCodMaterialTextField txt_estado;
     // End of variables declaration//GEN-END:variables
  private boolean verificarCampos() {
-        int contador = 0, aux = 0;
-        
+        int contador = 0, aux = 0;        
         contador = Verificador.verificadorCampos(txt_descripcion);
         aux = contador + aux;
         return aux == 1;

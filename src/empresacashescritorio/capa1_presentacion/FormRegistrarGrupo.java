@@ -5,6 +5,8 @@
  */
 package empresacashescritorio.capa1_presentacion;
 
+import static empresacashescritorio.capa1_presentacion.FormMenuPrincipal.alturaPantalla;
+import static empresacashescritorio.capa1_presentacion.FormMenuPrincipal.anchoPantalla;
 import empresacashescritorio.capa1_presentacion.util.Mensaje;
 import empresacashescritorio.capa1_presentacion.util.Verificador;
 import empresacashescritorio.capa2_aplicacion.RegistrarGrupoServicio;
@@ -324,6 +326,8 @@ public class FormRegistrarGrupo extends javax.swing.JDialog implements Form_Inte
         inabilitarBotones(true);
         pintarBotones(true);
         limpiarDatosTablaIntegrantes();
+        buscarDatosSinlike();
+        Verificador.limpiarTexto(txt_dniCliente);
     }//GEN-LAST:event_btn_cancelarActionPerformed
 
     private void limpiarDatosTablaIntegrantes() {
@@ -487,6 +491,7 @@ public class FormRegistrarGrupo extends javax.swing.JDialog implements Form_Inte
         try {
             Grupo grupo = buscarGrupo((int) tabla_grupo.getValueAt(filaSeleccionada, 0));
             VentanaGrupoGeneral ventanaDatosGrupo = new VentanaGrupoGeneral(null, true, grupo);
+            ventanaDatosGrupo.setBounds(0, 30, anchoPantalla, alturaPantalla - 70);
             ventanaDatosGrupo.setVisible(true);
             buscarDatosSinlike();
             inabilitarBotones(true);
@@ -532,6 +537,7 @@ public class FormRegistrarGrupo extends javax.swing.JDialog implements Form_Inte
         btn_crear.setEnabled(estado);
         btn_eliminar.setEnabled(!estado);
         btn_modificar.setEnabled(!estado);
+
     }
 
     @Override

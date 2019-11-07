@@ -63,7 +63,9 @@ public class Grupo {
         int contador = 0;
         for (DetalleGrupo detalleGrupo : listaDetalleGrupo) {
             if (detalleGrupo.getId() == codigo) {
-                listaDetalleGrupo.get(contador).setEstadoAccion(DetalleGrupo.ESTADO_ELIMINAR);
+
+                listaDetalleGrupo.remove(contador);
+
                 return true;
             }
             contador++;
@@ -127,11 +129,11 @@ public class Grupo {
     }
 
     public Object generaNombreIntegrantes() {
-        
+
         String nombreIntegrante = "";
         for (DetalleGrupo detalleGrupo : listaDetalleGrupo) {
             if (detalleGrupo.getCliente() != null) {
-                nombreIntegrante = nombreIntegrante + "\n"+ detalleGrupo.getCliente().generaNombre();
+                nombreIntegrante = nombreIntegrante + "\n" + detalleGrupo.getCliente().generaNombre();
             }
 
         }

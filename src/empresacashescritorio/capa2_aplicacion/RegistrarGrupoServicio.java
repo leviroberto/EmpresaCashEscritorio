@@ -8,6 +8,7 @@ package empresacashescritorio.capa2_aplicacion;
 import empresacashescritorio.capa3_dominio.Cliente;
 import empresacashescritorio.capa3_dominio.Grupo;
 import empresacashescritorio.capa4_persistencia.ClienteDAOMySQL;
+import empresacashescritorio.capa4_persistencia.DetalleGrupoDAOMySQL;
 import empresacashescritorio.capa4_persistencia.GestorJDBC;
 import empresacashescritorio.capa4_persistencia.GestorJDBCMySQL;
 import empresacashescritorio.capa4_persistencia.GrupoDAOMySQL;
@@ -24,11 +25,13 @@ public class RegistrarGrupoServicio {
 
     private final GrupoDAOMySQL grupoDAOMySQL;
     private ClienteDAOMySQL clienteDAOMySQL;
+    private DetalleGrupoDAOMySQL detalleGrupoDAOMySQL;
 
     public RegistrarGrupoServicio() {
         gestorJDBC = new GestorJDBCMySQL();
         grupoDAOMySQL = new GrupoDAOMySQL(gestorJDBC);
         clienteDAOMySQL = new ClienteDAOMySQL(gestorJDBC);
+        detalleGrupoDAOMySQL = new DetalleGrupoDAOMySQL(gestorJDBC);
     }
 
     public int guardar(Grupo grupo) throws Exception {
@@ -104,12 +107,20 @@ public class RegistrarGrupoServicio {
 
     }
 
-    public List<Grupo> buscarClienteLike(String dni)throws Exception {
-         List<Grupo> listaGrupo = null;
+    public List<Grupo> buscarClienteLike(String dni) throws Exception {
+        List<Grupo> listaGrupo = null;
         gestorJDBC.abrirConexion();
         listaGrupo = grupoDAOMySQL.buscarClienteLike(dni);
         gestorJDBC.cerrarConexion();
         return listaGrupo;
+    }
+
+    public int eliminarDetalleGrupo(int codigo) throws Exception {
+        int numeroAfectados = 0;
+        gestorJDBC.abrirConexion();
+        numeroAfectados = detalleGrupoDAOMySQL.eliminar(codigo);
+        gestorJDBC.cerrarConexion();
+        return numeroAfectados;
     }
 
 }

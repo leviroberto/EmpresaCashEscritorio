@@ -308,6 +308,7 @@ public class FormMenuPrincipal extends javax.swing.JFrame {
 
     private void btnRegistroAFP3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistroAFP3ActionPerformed
         FormGestionarPrestamo d = new FormGestionarPrestamo(this, true);
+        d.setBounds(0, 30, anchoPantalla, alturaPantalla - 70);
         d.setVisible(true);
     }//GEN-LAST:event_btnRegistroAFP3ActionPerformed
 

@@ -5,6 +5,8 @@
  */
 package empresacashescritorio.capa1_presentacion;
 
+import static empresacashescritorio.capa1_presentacion.FormMenuPrincipal.alturaPantalla;
+import static empresacashescritorio.capa1_presentacion.FormMenuPrincipal.anchoPantalla;
 import empresacashescritorio.capa1_presentacion.util.Mensaje;
 import empresacashescritorio.capa1_presentacion.util.Verificador;
 import empresacashescritorio.capa2_aplicacion.RegistrarGrupoServicio;
@@ -271,6 +273,7 @@ public class VentanaGrupoDatos extends javax.swing.JDialog {
                         Grupo grupo = registrarGrupoServicio.obtenerUltimoRegistro();
                         this.dispose();
                         VentanaGrupoGeneral ventanaGrupoGeneral = new VentanaGrupoGeneral(null, true, grupo);
+                        ventanaGrupoGeneral.setBounds(0, 30, anchoPantalla, alturaPantalla - 70);
                         ventanaGrupoGeneral.setVisible(true);
 
                     } else if (registrosAfectados == 0) {

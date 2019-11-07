@@ -39,7 +39,6 @@ public class VentanaClienteDatos extends javax.swing.JDialog {
             tipo_accion = ACCION_CREAR;
             txt_estado.setText(Cliente.ESTADO_ACTIVO);
             inabilitarCampos(false);
-
             llenarCombTipoCliente();
         } catch (Exception e) {
             Mensaje.mostrarAdvertencia(e.getMessage());
@@ -177,6 +176,11 @@ public class VentanaClienteDatos extends javax.swing.JDialog {
         txt_apellidos.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         txt_apellidos.setLabel("APELLIDOS");
         txt_apellidos.setMargin(new java.awt.Insets(0, 0, 0, 0));
+        txt_apellidos.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                txt_apellidosKeyReleased(evt);
+            }
+        });
         jPanel3.add(txt_apellidos, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 150, 200, 60));
 
         txt_nombre.setForeground(new java.awt.Color(65, 94, 255));
@@ -185,6 +189,11 @@ public class VentanaClienteDatos extends javax.swing.JDialog {
         txt_nombre.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         txt_nombre.setLabel("NOMBRE");
         txt_nombre.setMargin(new java.awt.Insets(0, 0, 0, 0));
+        txt_nombre.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                txt_nombreKeyReleased(evt);
+            }
+        });
         jPanel3.add(txt_nombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 80, 200, 60));
         jPanel3.add(fiveCodLabelImage3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 160, 50, 50));
 
@@ -284,6 +293,11 @@ public class VentanaClienteDatos extends javax.swing.JDialog {
         txt_carrera.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         txt_carrera.setLabel("CARRERA");
         txt_carrera.setMargin(new java.awt.Insets(0, 0, 0, 0));
+        txt_carrera.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                txt_carreraKeyReleased(evt);
+            }
+        });
         jPanel5.add(txt_carrera, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 170, 190, 60));
         jPanel5.add(fiveCodLabelImage12, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 180, 50, 50));
 
@@ -379,7 +393,6 @@ public class VentanaClienteDatos extends javax.swing.JDialog {
             cliente.setEstado(txt_estado.getText().toString());
 
             cliente.setTipoCliente(cbx_tipoCliente.getItemAt(cbx_tipoCliente.getSelectedIndex()));
-
             int registrosAfectados = 0;
             if (tipo_accion == ACCION_CREAR) {
                 try {
@@ -448,6 +461,18 @@ public class VentanaClienteDatos extends javax.swing.JDialog {
         Verificador.verificarNumeros(evt, txt_dni, 8);
     }//GEN-LAST:event_txt_dniKeyTyped
 
+    private void txt_nombreKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_nombreKeyReleased
+        Verificador.ponerEnMayuscula(txt_nombre);
+    }//GEN-LAST:event_txt_nombreKeyReleased
+
+    private void txt_apellidosKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_apellidosKeyReleased
+        Verificador.ponerEnMayuscula(txt_apellidos);
+    }//GEN-LAST:event_txt_apellidosKeyReleased
+
+    private void txt_carreraKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_carreraKeyReleased
+        Verificador.ponerEnMayuscula(txt_carrera);
+    }//GEN-LAST:event_txt_carreraKeyReleased
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private FiveCodMaterialDesignButton.FiveCodMaterialButton btn_Cancelar;
@@ -490,27 +515,26 @@ public class VentanaClienteDatos extends javax.swing.JDialog {
     private boolean verificarCampos() {
         int contador = 0, aux = 0;
 
-        contador = Verificador.verificadorCampos(txt_nombre);
+        contador = Verificador.verificarCombobox(cbx_universidad);
+        aux = contador + aux;
+        contador = Verificador.verificarCombobox(cbx_tipoCliente);
+        aux = contador + aux;
+        contador = Verificador.verificarCombobox(cbx_genero);
+        aux = contador + aux;
+        contador = Verificador.verificadorCampos(txt_celular);
+        aux = contador + aux;
+        contador = Verificador.verificadorCampos(txt_dni);
+        aux = contador + aux;
+        contador = Verificador.verificarCombobox(cbx_genero);
+        aux = contador + aux;
+        contador = Verificador.verificadorCamposFechas(date_fechaNacimiento);
         aux = contador + aux;
         contador = Verificador.verificadorCampos(txt_apellidos);
         aux = contador + aux;
 
-        contador = Verificador.verificadorCamposFechas(date_fechaNacimiento);
-        aux = contador + aux;
-        contador = Verificador.verificarCombobox(cbx_genero);
-        aux = contador + aux;
-        contador = Verificador.verificadorCampos(txt_dni);
+        contador = Verificador.verificadorCampos(txt_nombre);
         aux = contador + aux;
 
-        contador = Verificador.verificadorCampos(txt_celular);
-        aux = contador + aux;
-
-        contador = Verificador.verificarCombobox(cbx_genero);
-        aux = contador + aux;
-        contador = Verificador.verificarCombobox(cbx_tipoCliente);
-        aux = contador + aux;
-        contador = Verificador.verificarCombobox(cbx_universidad);
-        aux = contador + aux;
         return aux == 9;
     }
 
@@ -533,8 +557,8 @@ public class VentanaClienteDatos extends javax.swing.JDialog {
                     cbx_tipoCliente.setSelectedIndex(i);
                 }
             }
-            
-             for (int i = 0; i < cbx_universidad.getItemCount(); i++) {
+
+            for (int i = 0; i < cbx_universidad.getItemCount(); i++) {
                 if (cliente.getUniversidad().equals(cbx_universidad.getItemAt(i).toString())) {
                     cbx_universidad.setSelectedIndex(i);
                 }

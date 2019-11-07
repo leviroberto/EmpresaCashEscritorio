@@ -59,33 +59,26 @@ public class VentanaPrestamoPagar extends javax.swing.JDialog {
         fiveCodButton1 = new fivecodbutton.FiveCodButton();
         jPanel1 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
-        fiveCodLabelImage5 = new fivecodlabelimage.FiveCodLabelImage();
-        fiveCodLabelImage11 = new fivecodlabelimage.FiveCodLabelImage();
-        fiveCodLabelImage12 = new fivecodlabelimage.FiveCodLabelImage();
         txt_subTotal = new FiveCodMaterialDesignTextField.FiveCodMaterialTextField();
-        fiveCodLabelImage13 = new fivecodlabelimage.FiveCodLabelImage();
         txt_comision = new FiveCodMaterialDesignTextField.FiveCodMaterialTextField();
-        fiveCodLabelImage14 = new fivecodlabelimage.FiveCodLabelImage();
         txt_total = new FiveCodMaterialDesignTextField.FiveCodMaterialTextField();
-        fiveCodLabelImage15 = new fivecodlabelimage.FiveCodLabelImage();
         txt_mora = new FiveCodMaterialDesignTextField.FiveCodMaterialTextField();
         jLabel10 = new javax.swing.JLabel();
         txt_totalDiasAtrazados = new FiveCodMaterialDesignTextField.FiveCodMaterialTextField();
-        fiveCodLabelImage16 = new fivecodlabelimage.FiveCodLabelImage();
         jLabel11 = new javax.swing.JLabel();
-        fiveCodLabelImage18 = new fivecodlabelimage.FiveCodLabelImage();
         txt_estado = new FiveCodMaterialDesignTextField.FiveCodMaterialTextField();
         jLabel13 = new javax.swing.JLabel();
         date_fin = new rojeru_san.componentes.RSDateChooser();
         date_inicio = new rojeru_san.componentes.RSDateChooser();
         date_pago = new rojeru_san.componentes.RSDateChooser();
-        fiveCodLabelImage17 = new fivecodlabelimage.FiveCodLabelImage();
-        fiveCodButton2 = new fivecodbutton.FiveCodButton();
-        fiveCodLabelImage19 = new fivecodlabelimage.FiveCodLabelImage();
         txt_moraPorDia = new FiveCodMaterialDesignTextField.FiveCodMaterialTextField();
         jPanel4 = new javax.swing.JPanel();
         btn_guardar = new FiveCodMaterialDesignButton.FiveCodMaterialButton();
         btn_cancelar = new FiveCodMaterialDesignButton.FiveCodMaterialButton();
+        panelTitulo = new javax.swing.JPanel();
+        titulo = new javax.swing.JPanel();
+        fiveCodButton3 = new fivecodbutton.FiveCodButton();
+        jLabel4 = new javax.swing.JLabel();
 
         jPanel2.setBackground(new java.awt.Color(65, 94, 255));
 
@@ -148,9 +141,6 @@ public class VentanaPrestamoPagar extends javax.swing.JDialog {
         dropShadowBorder1.setShowTopShadow(true);
         jPanel3.setBorder(dropShadowBorder1);
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        jPanel3.add(fiveCodLabelImage5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, 50, 50));
-        jPanel3.add(fiveCodLabelImage11, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 90, 50, 50));
-        jPanel3.add(fiveCodLabelImage12, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 40, 50, 50));
 
         txt_subTotal.setForeground(new java.awt.Color(65, 94, 255));
         txt_subTotal.setAccent(new java.awt.Color(0, 132, 235));
@@ -163,8 +153,7 @@ public class VentanaPrestamoPagar extends javax.swing.JDialog {
                 txt_subTotalKeyTyped(evt);
             }
         });
-        jPanel3.add(txt_subTotal, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 30, 200, 60));
-        jPanel3.add(fiveCodLabelImage13, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 120, 50, 50));
+        jPanel3.add(txt_subTotal, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 200, 140, 60));
 
         txt_comision.setForeground(new java.awt.Color(65, 94, 255));
         txt_comision.setAccent(new java.awt.Color(0, 132, 235));
@@ -177,8 +166,7 @@ public class VentanaPrestamoPagar extends javax.swing.JDialog {
                 txt_comisionKeyTyped(evt);
             }
         });
-        jPanel3.add(txt_comision, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 110, 200, 60));
-        jPanel3.add(fiveCodLabelImage14, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 270, 50, 50));
+        jPanel3.add(txt_comision, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 200, 140, 60));
 
         txt_total.setForeground(new java.awt.Color(65, 94, 255));
         txt_total.setAccent(new java.awt.Color(0, 132, 235));
@@ -191,8 +179,7 @@ public class VentanaPrestamoPagar extends javax.swing.JDialog {
                 txt_totalKeyTyped(evt);
             }
         });
-        jPanel3.add(txt_total, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 260, 200, 60));
-        jPanel3.add(fiveCodLabelImage15, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 200, 50, 50));
+        jPanel3.add(txt_total, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 200, 180, 60));
 
         txt_mora.setForeground(new java.awt.Color(65, 94, 255));
         txt_mora.setAccent(new java.awt.Color(0, 132, 235));
@@ -205,10 +192,10 @@ public class VentanaPrestamoPagar extends javax.swing.JDialog {
                 txt_moraKeyTyped(evt);
             }
         });
-        jPanel3.add(txt_mora, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 190, 200, 60));
+        jPanel3.add(txt_mora, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 200, 150, 60));
 
         jLabel10.setText("Fechas");
-        jPanel3.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 10, -1, 20));
+        jPanel3.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, -1, 20));
 
         txt_totalDiasAtrazados.setForeground(new java.awt.Color(65, 94, 255));
         txt_totalDiasAtrazados.setAccent(new java.awt.Color(0, 132, 235));
@@ -221,12 +208,10 @@ public class VentanaPrestamoPagar extends javax.swing.JDialog {
                 txt_totalDiasAtrazadosKeyTyped(evt);
             }
         });
-        jPanel3.add(txt_totalDiasAtrazados, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 300, 200, 60));
-        jPanel3.add(fiveCodLabelImage16, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 310, 50, 50));
+        jPanel3.add(txt_totalDiasAtrazados, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 110, 200, 60));
 
         jLabel11.setText("Resumen pago");
-        jPanel3.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 10, -1, 20));
-        jPanel3.add(fiveCodLabelImage18, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 370, 50, 50));
+        jPanel3.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, -1, 20));
 
         txt_estado.setForeground(new java.awt.Color(65, 94, 255));
         txt_estado.setAccent(new java.awt.Color(0, 132, 235));
@@ -239,45 +224,31 @@ public class VentanaPrestamoPagar extends javax.swing.JDialog {
                 txt_estadoKeyTyped(evt);
             }
         });
-        jPanel3.add(txt_estado, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 360, 200, 60));
+        jPanel3.add(txt_estado, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 110, 200, 60));
 
         jLabel13.setText("Estado");
-        jPanel3.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 290, -1, 20));
+        jPanel3.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, -1, 20));
 
         date_fin.setColorBackground(new java.awt.Color(64, 95, 255));
         date_fin.setColorButtonHover(new java.awt.Color(64, 95, 255));
         date_fin.setColorForeground(new java.awt.Color(64, 95, 255));
         date_fin.setPlaceholder("FECHA FIN");
         date_fin.setPreferredSize(new java.awt.Dimension(200, 40));
-        jPanel3.add(date_fin, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 100, 200, 35));
+        jPanel3.add(date_fin, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 50, 200, 35));
 
         date_inicio.setColorBackground(new java.awt.Color(64, 95, 255));
         date_inicio.setColorButtonHover(new java.awt.Color(64, 95, 255));
         date_inicio.setColorForeground(new java.awt.Color(64, 95, 255));
         date_inicio.setPlaceholder("FECHA INICIO");
         date_inicio.setPreferredSize(new java.awt.Dimension(200, 40));
-        jPanel3.add(date_inicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 40, 200, 35));
+        jPanel3.add(date_inicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 50, 200, 35));
 
         date_pago.setColorBackground(new java.awt.Color(64, 95, 255));
         date_pago.setColorButtonHover(new java.awt.Color(64, 95, 255));
         date_pago.setColorForeground(new java.awt.Color(64, 95, 255));
         date_pago.setPlaceholder("FECHA PAGO");
         date_pago.setPreferredSize(new java.awt.Dimension(200, 40));
-        jPanel3.add(date_pago, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 160, 200, 35));
-        jPanel3.add(fiveCodLabelImage17, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 150, 50, 50));
-
-        fiveCodButton2.setBackground(new java.awt.Color(65, 94, 255));
-        fiveCodButton2.setBorder(null);
-        fiveCodButton2.setColorHover(new java.awt.Color(255, 68, 68));
-        fiveCodButton2.setFont(new java.awt.Font("Roboto Bold", 1, 20)); // NOI18N
-        fiveCodButton2.setLabel("X");
-        fiveCodButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                fiveCodButton2ActionPerformed(evt);
-            }
-        });
-        jPanel3.add(fiveCodButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 0, 40, -1));
-        jPanel3.add(fiveCodLabelImage19, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 220, 50, 50));
+        jPanel3.add(date_pago, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 50, 200, 35));
 
         txt_moraPorDia.setForeground(new java.awt.Color(65, 94, 255));
         txt_moraPorDia.setAccent(new java.awt.Color(0, 132, 235));
@@ -290,9 +261,9 @@ public class VentanaPrestamoPagar extends javax.swing.JDialog {
                 txt_moraPorDiaKeyTyped(evt);
             }
         });
-        jPanel3.add(txt_moraPorDia, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 210, 200, 60));
+        jPanel3.add(txt_moraPorDia, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, 200, 60));
 
-        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 1, 600, 430));
+        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, 780, 290));
 
         jPanel4.setBackground(new java.awt.Color(65, 94, 255));
         jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -306,7 +277,7 @@ public class VentanaPrestamoPagar extends javax.swing.JDialog {
                 btn_guardarActionPerformed(evt);
             }
         });
-        jPanel4.add(btn_guardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 90, 130, 60));
+        jPanel4.add(btn_guardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 110, 130, 60));
 
         btn_cancelar.setBackground(new java.awt.Color(255, 255, 255));
         btn_cancelar.setBorder(null);
@@ -317,22 +288,66 @@ public class VentanaPrestamoPagar extends javax.swing.JDialog {
                 btn_cancelarActionPerformed(evt);
             }
         });
-        jPanel4.add(btn_cancelar, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 90, 130, 60));
+        jPanel4.add(btn_cancelar, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 110, 130, 60));
 
-        jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 360, 630, 175));
+        jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 265, 800, 180));
+
+        panelTitulo.setBackground(new java.awt.Color(255, 0, 153));
+        panelTitulo.setLayout(new java.awt.BorderLayout());
+        jPanel1.add(panelTitulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(168, 0, 870, -1));
+
+        titulo.setBackground(new java.awt.Color(65, 94, 255));
+
+        fiveCodButton3.setBackground(new java.awt.Color(65, 94, 255));
+        fiveCodButton3.setBorder(null);
+        fiveCodButton3.setColorHover(new java.awt.Color(255, 68, 68));
+        fiveCodButton3.setFont(new java.awt.Font("Roboto Bold", 1, 20)); // NOI18N
+        fiveCodButton3.setLabel("X");
+        fiveCodButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fiveCodButton3ActionPerformed(evt);
+            }
+        });
+
+        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel4.setText("PAGAR PRESTAMO");
+
+        javax.swing.GroupLayout tituloLayout = new javax.swing.GroupLayout(titulo);
+        titulo.setLayout(tituloLayout);
+        tituloLayout.setHorizontalGroup(
+            tituloLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(tituloLayout.createSequentialGroup()
+                .addGap(31, 31, 31)
+                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 724, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 5, Short.MAX_VALUE)
+                .addComponent(fiveCodButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+        tituloLayout.setVerticalGroup(
+            tituloLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(tituloLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, 41, Short.MAX_VALUE)
+                .addComponent(fiveCodButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
+        jPanel1.add(titulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 634, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
-        setSize(new java.awt.Dimension(634, 532));
+        setSize(new java.awt.Dimension(803, 444));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -382,10 +397,6 @@ public class VentanaPrestamoPagar extends javax.swing.JDialog {
         }
     }
 
-
-    private void fiveCodButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fiveCodButton2ActionPerformed
-        this.dispose();
-    }//GEN-LAST:event_fiveCodButton2ActionPerformed
 
     private void txt_totalDiasAtrazadosKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_totalDiasAtrazadosKeyTyped
         // TODO add your handling code here:
@@ -473,6 +484,10 @@ public class VentanaPrestamoPagar extends javax.swing.JDialog {
         // TODO add your handling code here:
     }//GEN-LAST:event_txt_moraPorDiaKeyTyped
 
+    private void fiveCodButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fiveCodButton3ActionPerformed
+        this.dispose();
+    }//GEN-LAST:event_fiveCodButton3ActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private FiveCodMaterialDesignButton.FiveCodMaterialButton btn_cancelar;
@@ -481,25 +496,18 @@ public class VentanaPrestamoPagar extends javax.swing.JDialog {
     private rojeru_san.componentes.RSDateChooser date_inicio;
     private rojeru_san.componentes.RSDateChooser date_pago;
     private fivecodbutton.FiveCodButton fiveCodButton1;
-    private fivecodbutton.FiveCodButton fiveCodButton2;
-    private fivecodlabelimage.FiveCodLabelImage fiveCodLabelImage11;
-    private fivecodlabelimage.FiveCodLabelImage fiveCodLabelImage12;
-    private fivecodlabelimage.FiveCodLabelImage fiveCodLabelImage13;
-    private fivecodlabelimage.FiveCodLabelImage fiveCodLabelImage14;
-    private fivecodlabelimage.FiveCodLabelImage fiveCodLabelImage15;
-    private fivecodlabelimage.FiveCodLabelImage fiveCodLabelImage16;
-    private fivecodlabelimage.FiveCodLabelImage fiveCodLabelImage17;
-    private fivecodlabelimage.FiveCodLabelImage fiveCodLabelImage18;
-    private fivecodlabelimage.FiveCodLabelImage fiveCodLabelImage19;
-    private fivecodlabelimage.FiveCodLabelImage fiveCodLabelImage5;
+    private fivecodbutton.FiveCodButton fiveCodButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel panelTitulo;
+    private javax.swing.JPanel titulo;
     private FiveCodMaterialDesignTextField.FiveCodMaterialTextField txt_comision;
     private FiveCodMaterialDesignTextField.FiveCodMaterialTextField txt_estado;
     private FiveCodMaterialDesignTextField.FiveCodMaterialTextField txt_mora;
