@@ -66,7 +66,6 @@ public class FormGestionarCliente extends javax.swing.JDialog implements Form_In
         jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        setUndecorated(true);
         addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseDragged(java.awt.event.MouseEvent evt) {
                 formMouseDragged(evt);
@@ -248,7 +247,7 @@ public class FormGestionarCliente extends javax.swing.JDialog implements Form_In
 
         getContentPane().add(panelTitulo, java.awt.BorderLayout.PAGE_START);
 
-        setSize(new java.awt.Dimension(1038, 507));
+        setSize(new java.awt.Dimension(1054, 546));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
